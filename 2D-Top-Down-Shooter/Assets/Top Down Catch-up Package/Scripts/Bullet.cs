@@ -7,6 +7,7 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+    public GameObject bullet;
     Rigidbody2D rb;
     GameObject enemy;
     public float bulletSpeed, bulletDamage;
@@ -25,5 +26,10 @@ public class Bullet : MonoBehaviour
         {
             other.GetComponent<Enemy>().TakeDamage(bulletDamage);
         }
+    }
+
+    void Update()
+    {
+        Destroy(bullet, 10f);
     }
 }

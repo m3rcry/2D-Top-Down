@@ -23,6 +23,6 @@ public class Shooting : MonoBehaviour
 
     void Shoot(){
         GameObject clone = Instantiate(bullet, firePoint.transform.position, firePoint.transform.rotation);
-        Destroy(clone, 0.1f);
+        
     }
 }
