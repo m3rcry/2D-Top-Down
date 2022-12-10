@@ -30,6 +30,6 @@ public class Bullet : MonoBehaviour
 
     void Update()
     {
-        Destroy(bullet, 10f);
+        Destroy(bullet, 4);
     }
 }
