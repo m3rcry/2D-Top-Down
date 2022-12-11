@@ -10,7 +10,7 @@ public class Bullet : MonoBehaviour
     public GameObject bullet;
     Rigidbody2D rb;
     GameObject enemy;
-    public float bulletSpeed, bulletDamage;
+    public float bulletSpeed, bulletDamage, nextFire = 0.2F, fireRate = 0.3F;
 
     // Start is called before the first frame update
     void Start()
