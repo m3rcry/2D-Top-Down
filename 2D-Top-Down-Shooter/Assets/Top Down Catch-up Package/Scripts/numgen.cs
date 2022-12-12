@@ -12,8 +12,8 @@ public class numgen : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log(two);
-        Debug.Log(one);
+        //Debug.Log(two);
+        //Debug.Log(one);
     }
 
     // Update is called once per frame
