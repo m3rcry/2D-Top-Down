@@ -2,17 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
-//Fix this script
-//Add this script to your player
 
 public class PlayerHealth : MonoBehaviour
 {
     public float playerHealth;
-
+    public Slider healthSlider;
     // Update is called once per frame
     void Update()
     {
+        healthSlider.value = playerHealth;
         if(playerHealth <= 0)
         {
             GameOver();
@@ -21,6 +21,6 @@ public class PlayerHealth : MonoBehaviour
 
     void GameOver()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
 }
